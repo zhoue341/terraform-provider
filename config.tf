@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-provider "awesome" {
+provider "aws" {
   api_key     = "s3cur3t0k3n=="
   endpoint    = "https://api.example.org/v1"
   timeout     = 60
