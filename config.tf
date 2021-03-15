@@ -12,16 +12,15 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-default: build plan
+provider "awesome" {
+  api_key     = "s3cur3t0k3n=="
+  endpoint    = "https://api.example.org/v1"
+  timeout     = 60
+  max_retries = 5
+}
 
-deps:
-	go install github.com/hashicorp/terraform
-
-build:
-	go build -o terraform-provider-awesome .
-
-test:
-	go test -v .
-
-plan:
-	@terraform plan
+resource "awesome_machine" "my-speedy-server" {
+  name = "speedracer"
+  cpus = 4
+  ram  = 16384
+}
