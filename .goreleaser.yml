@@ -48,9 +48,9 @@ signs:
       - "--detach-sign"
       - "${artifact}"
 release:
-  disable: false
-  github:
-      owner: zhoue341
-      name: <your_repo>
+ # disable: false
+  #github:
+ #     owner: zhoue341
+ #     name: <your_repo>
 changelog:
   skip: true
